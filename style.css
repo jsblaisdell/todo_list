@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+
+body {
+    background-color: #EEE;
+    margin: 0;
+    font-family: helvetica;
+    font-weight: 100;
+}
+
+.wrap {
+    background-color: white;
+    width: 500px;
+    padding: 15px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "PT Sans";
+    text-align: center;
+}
+
+.input {
+    width: 100%;
+    font-style: italic;
+    font-size: 1.7em;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.submit {
+    position: absolute;
+    left: -9999px;
+}
+
+.todo {
+    padding: 15px 0;
+    font-size: 1.5em;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.todo:last-of-type {
+    border: none;
+}
+
+.task-number {
+    background-color: #F1FFE6;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin: 0 -15px -15px -15px;
+    padding: 10px 15px;
+    color: rgba(0,0,0,.5);
+}
+
+.task-number span {
+    font-weight: bold;
+}

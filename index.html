@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <h1>Todos</h1>
+        <form>
+            <input type="text" class="input" placeholder="What needs to be done?">
+            <input type="submit" class="submit">
+        </form>
+
+        <input type="checkbox" id="mark-all">
+        <label for="mark-all">Mark all as complete</label>
+
+        <div class="todos"></div>
+
+        <div class="task-number"><span>3</span> items left</div>
+    </div>
+
+    <div id="templates">
+        <script class="todo" type="text/template">
+            <div class="todo">
+                <input  id="<%= name %>" type="checkbox" class="checkbox" <% if(complete) { %> checked <% } %>>
+                <label for="<%= name %>" class="task-name"><%= name %></label>
+            </div>
+        </script>
+    </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
+
+<!--  if (<%= complete %>) {return "checked"} -->
